@@ -17,7 +17,6 @@ public class Play {
                 "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
 
         String result = printTextPerRole(roles, textLines);
-        System.out.println(result);
     }
 
 
