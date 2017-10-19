@@ -1,4 +1,4 @@
-package stepic_2;
+package stepik_2;
 
 public class Expression {
     public static void main(String[] args) {

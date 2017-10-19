@@ -1,4 +1,4 @@
-package stepic_2;
+package stepik_2;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,7 +14,7 @@ public class Palindrome {
         System.out.println(result);
         StringBuffer output = new StringBuffer(result);
         output.reverse();
-        if (result.toString().equals(output.toString())) {
+        if (result.equals(output.toString())) {
             System.out.println("true");
         } else {
             System.out.println("false");

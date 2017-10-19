@@ -1,4 +1,4 @@
-package stepic_2;
+package stepik_2;
 
 public class Play {
 
@@ -17,16 +17,28 @@ public class Play {
                 "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
 
         String result = printTextPerRole(roles, textLines);
-        System.out.println(result);
     }
 
 
     public static String printTextPerRole(String[] roles, String[] textLines) {
-        for (int i = 0; i <= roles.length; i++){
-            for (int j = 0; j <= textLines.length; i++) {
-                
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < roles.length; i++) {
+            result
+                    .append("\n")
+                    .append(roles[i])
+                    .append(":")
+                    .append("\n");
+            for (int j = 0; j < textLines.length; j++) {
+                if (textLines[j].startsWith(roles[i] + ":", 0)) {
+                    result
+                            .append(j + 1)
+                            .append(") ")
+                            .append(textLines[j].substring(roles[i].length() + 2))
+                            .append("\n");
+                }
+
             }
         }
-        return "";
+        return result.toString();
     }
 }

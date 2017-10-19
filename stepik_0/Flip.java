@@ -1,7 +1,7 @@
 package stepik_0;
 
 public class Flip { public static void main(String[] args) {
-        int flip = flipBit(5,3);
+        int flip = flipBit(7,3);
         System.out.println(flip);
 
     }
@@ -10,4 +10,5 @@ public class Flip { public static void main(String[] args) {
         return value ^ result;
     }
     //value - 101, 100
+    //1101  - 1001
 }

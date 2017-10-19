@@ -1,14 +1,18 @@
-package stepic_2;
+package stepik_2;
 
 public class Degree {
     public static void main(String[] args) {
-        int a  = 8 << 2;
-        int b  = 64  & 63;
-        int c = -2;
-        String d = "F";
-        char g = '1';
-        String f = g + d;
-        System.out.println(f);
+        Boolean result = isPowerOfTwo(10);
+        System.out.println(result);
 
+    }
+    public static boolean isPowerOfTwo(int value) {
+        boolean result;
+        if ((Math.abs(value) & ((Math.abs(value) - 1))) == 0 && value != 0){
+            result = true;
+        } else {
+            result = false;
+        }
+        return result;// you implementation here
     }
 }
